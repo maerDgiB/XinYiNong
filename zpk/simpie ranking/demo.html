@@ -1,31 +1,50 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>K2046.TableSorterV2</title>
-<style type="text/css">
-body{font-size:12px;line-height:25px;}
-tr{height:25px;}
-th{font-size:14px;border-bottom:solid 1px #DDDDDD;background-color:#EEEEEE;}
-td{font-size:12px;text-align:center;}
-.SortDescCss{background-image:url(Desc.gif);background-repeat:no-repeat;background-position:right center;}
-.SortAscCss{background-image:url(Asc.gif);background-repeat:no-repeat;background-position:right center;}
-</style>
-<script language="javascript" type="text/javascript" src="TableSorterV2.js"></script>
-<script language="javascript" type="text/javascript">
-window.onload = function()
-{
-    new TableSorter("tb1");
-   
-    /*{
-        alert("table is sorted by " + c.innerHTML + " " + (t ? "Asc" : "Desc"));
-    }*/
-}
-    </script>
+	<meta charset="UTF-8">
+	<title>白霁-modify</title>
 </head>
+<style type="text/css">
+	body{
+		font-size:12px;
+		line-height:25px;
+	}
+	tr{
+		height:25px;
+	}
+	th{
+		font-size:14px;
+		border-bottom:solid 1px #DDDDDD;
+		background-color:#EEEEEE;
+	}
+	td{
+		font-size:12px;
+		text-align:center;
+	}
+	.SortDescCss{
+		background-image:url(Desc.gif);
+		background-repeat:no-repeat;
+		background-position:right center;
+	}
+	.SortAscCss{
+		background-image:url(Asc.gif);
+		background-repeat:no-repeat;
+		background-position:right center;
+	}
+</style>
+	<script language="javascript" type="text/javascript" src="TableSorterV2.js"></script>
+	<script language="javascript" type="text/javascript">
+		window.onload = function()
+		{
+		    new TableSorter("tb1");
+		   
+		    /*{
+		        alert("table is sorted by " + c.innerHTML + " " + (t ? "Asc" : "Desc"));
+		    }*/
+		}
+    </script>
 <body>
- 
-<table border="0" style="border:solid 1px #DDDDDD;width:360px;" cellpadding="0" cellspacing="0" id="tb1">
+	<table border="0" style="border:solid 1px #DDDDDD;width:360px;" cellpadding="0" cellspacing="0" id="tb1">
     <tr>
         <th>序号</th>
         <th>商品</th>
@@ -81,6 +100,5 @@ window.onload = function()
         <td>2017-04-13</td>
     </tr>
 </table>
-
 </body>
 </html>
