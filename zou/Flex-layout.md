@@ -32,7 +32,9 @@ container 、item 、 main/cross axis 、 main/cross start 、main/cross end 、
 
 ### 使用
 
-1. 手机布局 topbar + main+ tabs
-2. 产品列表
+1. [手机布局 topbar + main+ tabs](http://js.jirengu.com/lesab/6/edit)
+2. [产品列表](http://js.jirengu.com/poza/2/edit)
 3. PC页面布局
-4. 完美居中
+4. [完美居中](http://js.jirengu.com/reka/4/edit)
+
+[感兴趣就可以看看](http://www.jirengu.com/app/watch/1412/1?vsum=140)
