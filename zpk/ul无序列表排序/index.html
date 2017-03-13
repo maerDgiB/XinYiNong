@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/rank.css"/>
+</head>
+<body>
+    <ul>
+        <li>4</li>
+        <li>7</li>
+        <li>9</li>
+        <li>2</li>
+        <li>1</li>
+        <li>5</li>
+        <li>6</li>
+        <li>8</li>
+        <li>3</li>
+        <li>3</li>
+    </ul>
+    <div>
+        <button>从小到大</button><button>取消排序</button><button>从大到小</button>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        var color = ['#ffcc66' , '#ffcccc' , '#cccc33' , '#cccccc' , '#999933' , '#9999cc' , '#663333' , '#6666cc' , '#FF6A6A' , '#009966'];
+        var initList = [], domArr = [];
+        $('li').each(function(a){
+            $(this).css('background' , color[a]);
+            $(this).attr('title' , '原位置为：'+(a+1));
+            initList[a] = $(this).html();
+        })
+        /*
+        从小到大排序
+         */
+        function smallToBig(){
+            getDom();
+            $.each(domArr , function(i){
+                $.each(domArr , function(j){
+                    if( domArr[i].html() < domArr[j].html()){
+                        mid = domArr[j]; domArr[j] = domArr[i]; domArr[i] = mid;
+                    }
+                })
+            })
+            appendDom();
+        }
+        /*
+         取消排序
+         */
+        function cancleRank(){
+            getDom();
+            $.each(initList,function(b){
+                $.each(domArr,function(c){
+                    if(domArr[c].html() == initList[b]){
+                        $('ul').append(domArr[c]);
+                    }
+                })
+            })
+        }
+        /*
+         从大到小排序
+         */
+        function bigToSmall(){
+            getDom();
+            $.each(domArr , function(i){
+                $.each(domArr , function(j){
+                    if( domArr[i].html() > domArr[j].html()){
+                        mid = domArr[j]; domArr[j] = domArr[i]; domArr[i] = mid;
+                    }
+                })
+            })
+            appendDom()
+        }
+        /*
+        取出所有li放进数组
+         */
+        function getDom(){
+            $('li').each(function( m ){
+                domArr[m] = $(this);
+            })
+        }
+        /*
+        将数组中的li插入ul(原ul中的li自动删除。DOM元素的特性。)
+         */
+        function appendDom(){
+            $.each( domArr, function(d){
+                $('ul').append( domArr[d] );
+            })
+        }
+        var funSum = [ smallToBig , cancleRank , bigToSmall];
+        $('button').click(function(){
+            var fun = funSum[$(this).index()]
+            fun();
+        })
+    </script>
+</body>
+</html>
