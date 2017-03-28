@@ -1,0 +1,40 @@
+/**
+ @Author baixiaoji
+*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+li{
+	list-style: none;
+}
+
+.wrapper{
+	height: 100vh;
+	display: flex;
+	flex-direction:column;
+}
+
+header{
+	background: #EE6F5E;
+	/*height:50px;*/
+	min-height:50px;
+}
+main{
+	flex-grow:1;
+	background: #fff;
+	overflow: auto;
+}
+.tabs{
+	display: flex;
+}
+.tabs>li{
+	height:45px;
+	display: flex;
+	flex:1;
+	justify-content: center;
+    align-items: center;
+    color:#fff;
+    background: #EE6F5e;
+}
