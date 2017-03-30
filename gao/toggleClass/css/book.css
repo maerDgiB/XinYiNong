@@ -1,0 +1,18 @@
+.circle{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #49484B;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.circle.selected{
+  
+ background-image:url(../img/selected.png);
+  background-size:cover ;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #49484B;
+  box-sizing: border-box;
+  display: inline-block;
+}
