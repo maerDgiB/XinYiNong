@@ -1,8 +1,8 @@
-$(function(){
-	$(".circle").click(function(){
-$(this).toggleClass("selected");
-  })
+
+$(".circle").click(function(){
+	$(this).toggleClass("selected");
 })
+
 
 /*
  * $(function(){})
