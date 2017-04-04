@@ -20,7 +20,27 @@ header{
 	background: #EE6F5E;
 	/*height:50px;*/
 	min-height:50px;
+	display: flex;
+	align-items: center;
 }
+
+header img{
+	height:40px;
+}
+header h4{
+	color:#fff;
+	flex: 1;
+}
+header span{
+	width:40px;
+	font-size: 30px;
+	color:#fff;
+	display: flex;
+	justify-content: center;
+}
+
+
+
 main{
 	flex-grow:1;
 	background: #fff;
