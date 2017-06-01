@@ -18,6 +18,9 @@ container 、item 、 main/cross axis 、 main/cross start 、main/cross end 、
 
 ![](https://cask.scotch.io/2015/04/CSS3-Flexbox-Model.jpg)
 
+
+
+
 ### container （容器） 属性
 
 1. [flex-direction](http://js.jirengu.com/ferub/8/edit)
@@ -44,3 +47,8 @@ container 、item 、 main/cross axis 、 main/cross start 、main/cross end 、
 4. [完美居中](http://js.jirengu.com/reka/4/edit)
 
 [感兴趣就可以看看](http://www.jirengu.com/app/watch/1412/1?vsum=140)
+
+
+
+
+
